@@ -1,115 +1,70 @@
 #include <iostream>
 using namespace std;
-//Problem11
+//problem1
 // int main() {
-//     int number;
-//     int positiveCount = 0;
-//     int negativeCount = 0;
-//     int total = 0;
-//     int cnt = 0;
-//     cout << "Enter a integer, the input ends if it is 0: ";
-//     cin >> number;
-//     while (cin >> number) {
-//         if (number == 0) {
-//             break;
-//         }
-//         if (number < 0) {
-//             negativeCount++;
-//         } else
-//             positiveCount++;
-//         total += number;
-// cnt++;    }
-//     if (negativeCount == 0 && positiveCount == 0 && number > 0)
-//         cout << "No numbers were entered except 0" << endl;
-//     else if (negativeCount == 0 && positiveCount >= 1 && number > 0)
-//         cout << "The number of positives is " << positiveCount << endl;
-//     else if ( negativeCount >= 1 && positiveCount == 0 && number > 0)
-//     cout << "The number of negatives is "<< negativeCount << endl;
-//     else if ( negativeCount >= 1 && positiveCount >= 1 && number > 0)
-//     cout << "The number of negatives and positives is " << negativeCount <<" and "<< positiveCount << endl;
-//     cout <<"Total numbers are: " << total << endl;
+//     int arr[5] = {10, 20, 30, 40, 50};
+//     int * p = arr;
+//     for (int i = 0; i < 5; i++)
+//     cout << *(p + i) << " " << endl;
 //     return 0;
 // }
-//Problem12
+//problem2
 // int main() {
-//     int n;
-//     cout << "Enter a the size of the square: ";
-//     cin >> n;
-//     int arr[n][n];
-//     for (int i = 0; i < n; i++) {
-//         for (int j = 0; j < n; j++) {
-//             cout << "*";
-//         }
-//         cout << endl;
+//     int arr[6] = {2,4,6,8,10,12};
+//     int * p = arr;
+//     for (int i = 0; i < 6; i++) {
+//         *(p + i) *= 3;
+//         cout << *(p + i) << " " << endl;
 //     }
 //     return 0;
 // }
-//Problem13
+//problem3
 // int main() {
-//     int n;
-//     cout << "Enter a number of rows: ";
-//     cin >> n;
-//     for (int i = 1; i <= n; i++) {
-//         for (int j = 1; j <= i; j++) {
-//             cout << " * ";
-//         }
-//         cout << endl;
+//     int arr[4] = {5,10,15,20};
+//     int * p = arr + 4;
+//    cout << "arr[2]: " << p[2] << endl;
+//     cout << "(arr + 2) = " << *(arr + 2);
+//     return 0;
+// }
+//proiblem4
+// int main() {
+//     int arr[5] = {1,2,3,4,5};
+//     int * p = arr + 4;
+//     for (int i = 0; i < 5; i++)
+//         cout << *(p - i) << endl;
+//         return 0;
+// }
+//problem5
+// int main() {
+//     int arr[3] = {1,2,3};
+//     int * ptr = arr;
+//     ptr = ptr+ 1;
+//     cout << *ptr << endl;
+// }
+//problem6
+// int main() {
+//     int arr[4] = {10,20,30,40};
+//     int * p = arr;
+//     for (int i = 0; i < 4; i++) {
+//         cout << "Value: " << *(p+i) << endl;
+//         cout << "Adress: " << (p+i) << endl;
 //     }
 //     return 0;
 // }
-//Problem14
+//problem7
 // int main() {
-//     int n;
-//     cout << "Enter the depth: ";
-//     cin >> n;
-//     if (n == 0) {
-//         cout << "The depth is zero" << endl;
-//     } else {
-//     }
-//     for (int i = 1; i <= n; i++) {
-//         for (int j = 1; j <= i; j++) {
-//             cout << i;
-//         }
-//         cout << endl;
-//     }
+//     int arr[7] = {11, 4, 7, 18, 5, 2, 9};
+//     int * p = arr;
+//     for (int i = 0; i < 7; i++)
+//     if (*(p+i) % 2 == 0)
+//         cout << *(p+i) << endl;
 //     return 0;
 // }
-//Problem15
+//problem8
 // int main() {
-//     int n;
-//     double sum = 0.0;
-//     cout << "Input a number: ";
-//     cin >> n;
-//     cout <<"[";
-//     for (int i = 1; i <= n; i++) {
-//         cout << "1/" << i;
-//         if (i < n) {
-//             cout << " + ";
-//         }
-//     }
-//     cout << "]" << endl;
-//     for (int i = 1; i <= n; i++) {
-//         sum += 1.0 / i;
-//     }
-//     cout << "The sum is " << sum << endl;
+//     int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
+//     int * p = &matrix[0][0];
+//     for (int i = 0; i < 6; i++)
+//         cout << matrix[i][0] << " " << matrix[i][1] << " " << matrix[i][2] << endl;
 //     return 0;
 // }
-//`problem16
-// int main() {
-//     int n;
-//     cin >> n;
-//     double rent = 1000.0;
-//     double rate = 0.03;
-//     int years = 5;
-//     double totalAllYears = 0.0;
-//     for (int year = 1; year <= years; year++) {
-//         double monthlyRent = rent;
-//         double yearlyTotal = monthlyRent * 12;
-//     cout << "For year number " << year
-//     << "rent is " << monthlyRent << endl;
-//     cout << "The total for year " << year
-//     << " is " << yearlyTotal << endl;}
-//     rent = rent * (1 + rate);
-// }
-// cout << "For all  years total rent is " << yearlyTotal << endl;
-// return 0;
